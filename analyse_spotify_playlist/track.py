@@ -1,5 +1,7 @@
 """Class definition for Track data."""
 
+from analyse_spotify_playlist.utils import convert_key, convert_mode
+
 
 class Track:
     """Track in a playlist."""
@@ -80,11 +82,19 @@ class Track:
         self._danceability = danceability
         self._energy = energy
         self._instrumentalness = instrumentalness
-        self._key = key
+        self._key = convert_key(key)
         self._liveness = liveness
         self._loudness = loudness
-        self._mode = mode
+        self._mode = convert_mode(mode)
         self._speechiness = speechiness
         self._tempo = tempo
         self._time_signature = time_signature
         self._valence = valence
+
+    def get_release_date(self) -> str:
+        """Return release date for the track."""
+        return self._album["release_date"]
+
+    def get_album_type(self) -> str:
+        """Return album type the track is from."""
+        return self._album["album_type"]

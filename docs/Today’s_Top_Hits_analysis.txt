@@ -1,0 +1,78 @@
+----- PLAYLIST ANALYSIS -----
+Playlist: Today’s Top Hits
+Description: The hottest 50. Cover: Tate McRae
+Followers: 34956105
+Total Tracks: 50
+Owner: Spotify
+Collaborative: No
+Playlist Type: Public
+
+--- TRACK SUMMARY ---
+Total Playable Tracks: 50
+Total Tracks marked as Explicit: 16 (32.0%)
+
+Oldest Track: "End of Beginning", by Djo, Released: 2022-09-16
+Newest Track: "Una Velita", by Bad Bunny, Released: 2024-09-19
+
+The Shortest Track in the playlist is: "Touch", by KATSEYE with a runtime of 02:09
+The Longest Track in the playlist is: "Not Like Us", by Kendrick Lamar with a runtime of 04:34
+The Average Track duration is: 03:06
+
+Most Tracks Are from the 2020's (100.0%)
+Most Tracks Are from the Single Release (68.0%)
+
+The Most Common Key is: B (16.0%)
+The Most Common Mode is: Major (66.0%)
+The Most Common Time Signature is: 4/4 (88.0%)
+
+The Quietest Track in the playlist is: "Fortnight (feat. Post Malone)", by Taylor Swift with -10.976 dB
+The Loudest Track in the playlist is: "CRAZY", by LE SSERAFIM with -2.223 dB
+The Average dB is: -6.13 dB
+
+The Track with the lowest tempo is: "A Bar Song (Tipsy)", by Shaboozey with a 81.012 BPM
+The Track with the highest tempo is: "Fortnight (feat. Post Malone)", by Taylor Swift with 192.004 BPM
+The Average Tempo is: 129.64 BPM
+
+The Vibe of the playlist is Mixed. The Valence of the playlist is in the middle ground, and the tracks are likely a mix of both positive and negative.
+The Least Positive Track in the playlist is: "BABY I'M BACK", by The Kid LAROI with a Valence score of 12.8%
+The Most Positive Track in the playlist is: "Apple", by Charli xcx with a Valence score of 96.2%
+
+This playlist has a High danceability score. You can boogie to this playlist.
+The Least Danceable Track in the playlist is: "Saturn", by SZA with a danceability score of 41.1%
+The Most Danceable Track in the playlist is: "Houdini", by Eminem with a danceability score of 93.6%
+
+The Energy of the playlist is High, might be good to use while going for a run... No promises.
+The Lowest Energy Track in the playlist is: "Fortnight (feat. Post Malone)", by Taylor Swift with a energy score of 38.6%
+The Highest Energy Track in the playlist is: "Apple", by Charli xcx with a energy score of 95.7%
+
+The playlist contains 1 Instrumental tracks *
+The playlist contains 0 Spoken Word tracks *
+
+The Most Popular Tracks in the playlist (according to spotify):
+
+ 1.  Die With A Smile - Lady Gaga (100)
+ 2.  BIRDS OF A FEATHER - Billie Eilish (99)
+ 3.  Good Luck, Babe! - Chappell Roan (97)
+ 4.  Espresso - Sabrina Carpenter (97)
+ 5.  Si Antes Te Hubiera Conocido - KAROL G (96)
+ 6.  Please Please Please - Sabrina Carpenter (95)
+ 7.  Who - Jimin (94)
+ 8.  Not Like Us - Kendrick Lamar (93)
+ 9.  The Emptiness Machine - Linkin Park (93)
+10.  Guess featuring Billie Eilish - Charli xcx (92)
+
+The Least Popular Tracks in the playlist (according to spotify) **:
+ 1.  Austin - Dasha (16)
+ 2.  MILLION DOLLAR BABY - Tommy Richman (59)
+ 3.  Una Velita - Bad Bunny (78)
+ 4.  CRAZY - LE SSERAFIM (79)
+ 5.  Too Sweet - Hozier (81)
+ 6.  Taste - Sabrina Carpenter (83)
+ 7.  we can't be friends (wait for your love) - Ariana Grande (83)
+ 8.  Touch - KATSEYE (85)
+ 9.  BABY I'M BACK - The Kid LAROI (85)
+10.  Diet Pepsi - Addison Rae (85)
+
+*  Allegedly.
+** If all have a score of zero, then list is in order of added to playlist.
+-----------------------------

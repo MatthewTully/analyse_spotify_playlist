@@ -2,7 +2,14 @@
 
 from requests import get, post
 
-from src.config import CLIENT_ID, CLIENT_SECRET, SPOTIFY_ACCOUNTS_URL, SPOTIFY_API_URL
+from analyse_spotify_playlist.config import (
+    CLIENT_ID,
+    CLIENT_SECRET,
+    SPOTIFY_ACCOUNTS_URL,
+    SPOTIFY_API_URL,
+)
+from analyse_spotify_playlist.playlist import Playlist
+from analyse_spotify_playlist.utils import performance_timer
 
 
 def request_access_token() -> dict:
@@ -42,6 +49,20 @@ def pull_playlist_data(token: str, playlist_id: str) -> dict:
     return res.json()
 
 
+def pull_next_set_of_tracks(token: str, playlist: Playlist) -> None:
+    """Use the 'next' Url to fetch the next set of Tracks for the playlist."""
+    url = playlist.next_url
+    res = get(url, headers=set_auth_header(token))
+    res.raise_for_status()
+    # print(f"Response took - {res.elapsed.total_seconds()}s")
+
+    tracks = res.json()
+    playlist.add_tracks(tracks)
+    if playlist.next_url:
+        pull_next_set_of_tracks(token, playlist)
+
+
+# @performance_timer
 def pull_tracks_audio_features_r(token: str, track_ids: list[str]) -> list:
     """Recursively Split id list down to size and make the request."""
     if len(track_ids) <= 100:

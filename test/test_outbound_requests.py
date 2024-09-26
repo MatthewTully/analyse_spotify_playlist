@@ -1,7 +1,10 @@
 import unittest
 import unittest.mock
 
-from src.outbound_requests import audio_feature_request, pull_tracks_audio_features_r
+from analyse_spotify_playlist.outbound_requests import (
+    audio_feature_request,
+    pull_tracks_audio_features_r,
+)
 
 
 class MockHTTP:
@@ -23,7 +26,9 @@ class TestOutbound(unittest.TestCase):
     def mock_audio_feature_request(self, token, track_list):
         return [{"id": x} for x in track_list]
 
-    @unittest.mock.patch("src.outbound_requests.audio_feature_request")
+    @unittest.mock.patch(
+        "analyse_spotify_playlist.outbound_requests.audio_feature_request"
+    )
     def test_pull_tracks_audio_features_r_1_set(
         self, mock_request: unittest.mock.MagicMock
     ):
@@ -37,7 +42,9 @@ class TestOutbound(unittest.TestCase):
         self.assertEqual(mock_request.call_count, 1)
         self.assertEqual(len(res), total)
 
-    @unittest.mock.patch("src.outbound_requests.audio_feature_request")
+    @unittest.mock.patch(
+        "analyse_spotify_playlist.outbound_requests.audio_feature_request"
+    )
     def test_pull_tracks_audio_features_r_3_set(
         self, mock_request: unittest.mock.MagicMock
     ):
@@ -51,8 +58,8 @@ class TestOutbound(unittest.TestCase):
         self.assertEqual(mock_request.call_count, 3)
         self.assertEqual(len(res), total)
 
-    @unittest.mock.patch("src.outbound_requests.SPOTIFY_API_URL")
-    @unittest.mock.patch("src.outbound_requests.get")
+    @unittest.mock.patch("analyse_spotify_playlist.outbound_requests.SPOTIFY_API_URL")
+    @unittest.mock.patch("analyse_spotify_playlist.outbound_requests.get")
     def test_audio_feature_request(
         self, mock_request: unittest.mock.MagicMock, mock_param
     ):
@@ -68,7 +75,7 @@ class TestOutbound(unittest.TestCase):
             headers={"Authorization": f"Bearer test_token"},
         )
 
-    @unittest.mock.patch("src.outbound_requests.get")
+    @unittest.mock.patch("analyse_spotify_playlist.outbound_requests.get")
     def test_audio_feature_request_too_many_exception(
         self, mock_request: unittest.mock.MagicMock
     ):
@@ -82,7 +89,7 @@ class TestOutbound(unittest.TestCase):
             audio_feature_request("token", ids)
         mock_request.assert_not_called()
 
-    @unittest.mock.patch("src.outbound_requests.get")
+    @unittest.mock.patch("analyse_spotify_playlist.outbound_requests.get")
     def test_audio_feature_request_with_empty_list(
         self, mock_request: unittest.mock.MagicMock
     ):

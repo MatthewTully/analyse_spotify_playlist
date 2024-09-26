@@ -3,8 +3,8 @@ import unittest.mock
 from copy import deepcopy
 from test.mock_data import MOCK_PLAYLIST_RESPONSE
 
-from src.playlist import Playlist
-from src.track import Track
+from analyse_spotify_playlist.playlist import Playlist
+from analyse_spotify_playlist.track import Track
 
 
 class TestPlaylistClass(unittest.TestCase):
@@ -13,6 +13,7 @@ class TestPlaylistClass(unittest.TestCase):
         mock_playlist = deepcopy(MOCK_PLAYLIST_RESPONSE)
         expected_keys = [
             "name",
+            "owner",
             "collaborative",
             "description",
             "followers",
@@ -30,6 +31,7 @@ class TestPlaylistClass(unittest.TestCase):
         mock_playlist = deepcopy(MOCK_PLAYLIST_RESPONSE)
         expected_keys = [
             "name",
+            "owner",
             "collaborative",
             "description",
             "followers",

@@ -1,3 +1,7 @@
 __pycache__
 .venv
 .vscode
+.pytest_cache
+output
+*.egg-info
+TODO.md

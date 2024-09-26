@@ -3,7 +3,7 @@ import unittest.mock
 from copy import deepcopy
 from test.mock_data import MOCK_TRACK
 
-from src.track import Track
+from analyse_spotify_playlist.track import Track
 
 
 class TestPlaylistClass(unittest.TestCase):
@@ -51,11 +51,19 @@ class TestPlaylistClass(unittest.TestCase):
         self.assertEqual(track._danceability, mock_features["danceability"])
         self.assertEqual(track._energy, mock_features["energy"])
         self.assertEqual(track._instrumentalness, mock_features["instrumentalness"])
-        self.assertEqual(track._key, mock_features["key"])
+        self.assertEqual(track._key, "D")
         self.assertEqual(track._liveness, mock_features["liveness"])
         self.assertEqual(track._loudness, mock_features["loudness"])
-        self.assertEqual(track._mode, mock_features["mode"])
+        self.assertEqual(track._mode, "Major")
         self.assertEqual(track._speechiness, mock_features["speechiness"])
         self.assertEqual(track._tempo, mock_features["tempo"])
         self.assertEqual(track._time_signature, mock_features["time_signature"])
         self.assertEqual(track._valence, mock_features["valence"])
+
+    def test_get_release_date(self):
+        track = self.setup_mock_track()
+        self.assertEqual(track.get_release_date(), "2012-04-02")
+
+    def test_get_album_type(self):
+        track = self.setup_mock_track()
+        self.assertEqual(track.get_album_type(), "compilation")
